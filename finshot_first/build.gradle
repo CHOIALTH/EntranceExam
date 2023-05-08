@@ -14,6 +14,22 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.1'
+    implementation 'org.mybatis:mybatis:3.5.13'
+    implementation 'org.apache.poi:poi:5.2.2'
+    implementation 'org.apache.poi:poi-ooxml:5.2.2'
+    implementation 'org.springframework:spring-context-support:3.1.1.RELEASE'
+    implementation 'javax.mail:javax.mail-api:1.6.2'
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+    implementation 'mysql:mysql-connector-java:8.0.32'
+    /* Spring Boot 3.0 이상에선 jstl 사용시 javax~ 형식이 아닌 아래의 형식으로 의존성 주입해야 함*/
+    implementation 'jakarta.servlet:jakarta.servlet-api'
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
