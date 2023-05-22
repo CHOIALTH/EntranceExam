@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.1.0'
-	id 'io.spring.dependency-management' version '1.1.0'
+	id 'io.spring.dependency-management' version '1.1.0' // Spring Boot의 의존성들을 관리해 주는 플러그인(필수)
 }
 
 group = 'com.example'
@@ -16,11 +16,12 @@ configurations {
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-web' // 이걸 추가X -> 앱 실행하자마자 꺼진다.
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
 
 	compileOnly 'org.projectlombok:lombok'
