@@ -1,4 +1,5 @@
 package com.example.test_gradle.entity;
 
-public class Board {
+public record Board(long id) {
+
 }
