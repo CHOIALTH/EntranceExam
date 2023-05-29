@@ -1,12 +1,12 @@
 package com.example.test_gradle.entity;
 
+import java.util.Objects;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
-import java.util.Objects;
-
-@Entity
+@Entity // This is a JPA annotation to make this object ready for storage in a JPA-based data store.
 public class Employee {
     private @Id @GeneratedValue Long id;
     private String name;
